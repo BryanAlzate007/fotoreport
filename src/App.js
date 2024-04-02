@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { Mapa } from './Mapa';
+import { Filter } from './Filter';
+import { CreateButton } from './CreateButton';
 
 function App() {
+  const ubication = [
+    {nombre: 'Ubicatio 1', direccion: 'Direccion 1', position:[4.8300, -75.6992]},
+    {nombre: 'Ubicatio 2', direccion: 'Direccion 2', position:[4.8018, -75.7370]},
+    {nombre: 'Ubicatio 3', direccion: 'Direccion 3', position:[4.83814, -75.66893]},
+    {nombre: 'Ubicatio 4', direccion: 'Direccion 4', position:[4.81359, -75.71028]},
+  ];
   return (
+  <>
+    <Filter />
+    <CreateButton />
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Mapa ubication={ubication} />
     </div>
+
+  </>
   );
 }
 
