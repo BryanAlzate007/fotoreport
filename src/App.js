@@ -2,6 +2,9 @@ import './App.css';
 import { Mapa } from './Mapa';
 import { Filter } from './Filter';
 import { CreateButton } from './CreateButton';
+import { Login } from './Login';
+import { ButtonLogin } from './ButtonLogin';
+
 
 function App() {
   const ubication = [
@@ -10,10 +13,19 @@ function App() {
     {nombre: 'Ubicatio 3', direccion: 'Direccion 3', position:[4.83814, -75.66893]},
     {nombre: 'Ubicatio 4', direccion: 'Direccion 4', position:[4.81359, -75.71028]},
   ];
+  
   return (
-  <>
+  <>  
+    <ButtonLogin />
+  
+        {/* <Modal> */}
+          <Login />
+        {/* </Modal> */}
+  
+
     <Filter />
     <CreateButton />
+    
     <div className="App">
       <Mapa ubication={ubication} />
     </div>
