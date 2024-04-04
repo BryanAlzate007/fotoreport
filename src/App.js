@@ -4,6 +4,7 @@ import { Filter } from './Filter';
 import { CreateButton } from './CreateButton';
 import { Login } from './Login';
 import { ButtonLogin } from './ButtonLogin';
+import { NewReport } from './NewReport';
 
 
 function App() {
@@ -16,13 +17,13 @@ function App() {
   
   return (
   <>  
-    <ButtonLogin />
-  
+    {/* <ButtonLogin /> */}
+      
         {/* <Modal> */}
-          <Login />
+          {/* <Login /> */}
         {/* </Modal> */}
   
-
+    <NewReport/>
     <Filter />
     <CreateButton />
     
