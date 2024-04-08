@@ -1,9 +1,19 @@
 import React from "react";
+import { ImExit } from "react-icons/im";
+import './NewReport.css';
 
-function NewReport (){
+function NewReport ({ setFormCreate }){
     return (
         <div className="login-page">
             <div className="form">
+            <button className="button-back">
+            <ImExit 
+            className="ImExit"
+            onClick={
+              () => {
+              setFormCreate(false);
+              }}
+          /></button>
                 <form>
                     <label>Tipo de red</label>
                     <select>

@@ -51,7 +51,9 @@ function App() {
      />
     {openFormCreate && (
     <Modal>
-      <NewReport/>
+      <NewReport
+      setFormCreate={setFormCreate}
+      />
     </Modal>)}
    
     

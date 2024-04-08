@@ -6,7 +6,14 @@ import { ImExit } from "react-icons/im";
 function Login ({ setOpenLogin }){
     return (
         <div className="form">
-          <button className="button-back"><ImExit className="ImExit"/></button>
+          <button className="button-back">
+            <ImExit 
+            className="ImExit"
+            onClick={
+              () => {
+                  setOpenLogin(false);
+              }}
+          /></button>
           <form className="register-form">
             <input type="text" placeholder="name"/>
             <input type="password" placeholder="password"/>
