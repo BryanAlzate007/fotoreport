@@ -1,10 +1,14 @@
 .create-button{
-    padding: 10px 20px;
+    top:10px;
+    right: 80px;
+    position: absolute;
+    padding: 5px 10px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    z-index: 1;
 }
 .create-button:hover {
     background-color: #45a049;

@@ -2,8 +2,10 @@ import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'; 
+import { CambiarEstado } from '../CambiarEstado';
 
-function Mapa({ ubication }){
+
+function RenderMap({ NewLocations }){
     const icon = new L.Icon({
         iconUrl: '../icon.jpeg',
         iconSize: [25, 41], // Tamaño del icono
@@ -16,11 +18,12 @@ function Mapa({ ubication }){
             <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
             />
-            {ubication.map((ubication, index) => (
-                <Marker key={index} position={ubication.position} icon={icon}>
+            {NewLocations.map((NewLocations, index) => (
+                <Marker key={index} position={NewLocations.position} icon={icon}>
                 <Popup>
-                     {ubication.nombre} <br /> {ubication.direccion}
-                     <p>Estado: {ubication.estado}</p>
+                     {NewLocations.name} <br /> {NewLocations.address}
+                     <p>Estado: {NewLocations.state}</p>
+                     <CambiarEstado />
                 </Popup>
             </Marker>
             ))}
@@ -29,4 +32,4 @@ function Mapa({ ubication }){
 
 }
 
-export { Mapa }
+export { RenderMap };

@@ -2,8 +2,8 @@ import React from "react";
 
 function NewReport (){
     return (
-        <div class="login-page">
-            <div class="form">
+        <div className="login-page">
+            <div className="form">
                 <form>
                     <label>Tipo de red</label>
                     <select>
