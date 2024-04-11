@@ -25,7 +25,7 @@ function App() {
   const [filterValue, setFilterValue] = React.useState('Pendiente');
   const [openLogin, setOpenLogin] = React.useState(false);
   const [openFormCreate, setFormCreate] = React.useState(false);
-  const NewLocations = locations.filter(location => location.state == filterValue);
+  const NewLocations = filterValue !== "Todos" ? locations.filter(location => location.state === filterValue) : locations;
 
   return (
   <>  

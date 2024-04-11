@@ -7,7 +7,7 @@ import { CambiarEstado } from '../CambiarEstado';
 
 function RenderMap({ NewLocations }){
     const icon = new L.Icon({
-        iconUrl: '../icon.jpeg',
+        iconUrl: process.env.PUBLIC_URL + '/src/icon.jpeg',
         iconSize: [25, 41], // Tamaño del icono
         iconAnchor: [12, 41], // Punto del icono que estará en la posición del marcador
         popupAnchor: [1, -34] // Punto del popup que estará en la posición del marcador

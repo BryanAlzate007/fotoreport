@@ -16,7 +16,7 @@ function NewReport ({ setFormCreate }){
           /></button>
                 <form>
                     <label>Tipo de red</label>
-                    <select>
+                    <select className="select">
                         <option>FO</option>
                         <option>HFC</option>
                     </select>
@@ -25,7 +25,7 @@ function NewReport ({ setFormCreate }){
                     <input placeholder="Latitud (4.830169)" />
                     <input placeholder="Latitud (-75.699574)" />
                     <label>Hallazgo </label>
-                     <select name="hallazgo">
+                     <select className="select" name="hallazgo">
                         <option>Reserva caida</option>
                         <option>Reserva mas adecuada</option>
                         <option>Empalme caido</option>
@@ -33,7 +33,7 @@ function NewReport ({ setFormCreate }){
                      <input placeholder="NODO" />
                      <input placeholder="Foto del hallazgo"/>
                      <input placeholder="Foto panoramica" />
-                     <button>Crear</button>
+                     <button className="button">Crear</button>
                 </form>
             </div>
         </div>

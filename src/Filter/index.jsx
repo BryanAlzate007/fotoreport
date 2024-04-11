@@ -15,6 +15,7 @@ function Filter({
                     <option>Pendiente</option>
                     <option>Ejecucion</option>
                     <option>Cerrado</option>
+                    <option>Todos</option>
             </select>
             <i></i>
         </div>
