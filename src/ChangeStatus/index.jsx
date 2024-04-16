@@ -1,10 +1,10 @@
 import React from "react";
 
-function CambiarEstado(){
+function ChangeStatus(){
     return (
         <button>Estado</button>
     );
 
 }
 
-export { CambiarEstado };
+export { ChangeStatus };
